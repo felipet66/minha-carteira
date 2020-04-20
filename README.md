@@ -4,7 +4,7 @@ Projeto criado com [Angular CLI](https://github.com/angular/angular-cli) versão
 
 ## Servidor de dev
 
-Para iniciar a aplicação utilize o comando `ng serve --open`.
+Para iniciar a aplicação utilize o comando `npm install && ng serve --open` ou `docker-compose up`.
 
 ## Codigos
 
