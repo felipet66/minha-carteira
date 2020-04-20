@@ -1,14 +1,7 @@
-# Estagio 1 - Será responsavel em construir nossa aplicação
-FROM node:11.8.0-slim as node
-WORKDIR /app
-COPY package.json /app/
-RUN npm i npm@latest -g
+FROM node:alpine
+WORKDIR '/app'
+COPY package.json .
 RUN npm install
-COPY ./ /app/
-ARG env=prod
-RUN npm run build
-
-# Estagio 2 - Será responsavel por expor a aplicação
-FROM nginx:1.13
-COPY --from=node /app/dist/minha-carteira /usr/share/nginx/html
-COPY ./nginx-custom.conf /etc/nginx/conf.d/default.conf
+COPY . .
+EXPOSE 4200
+CMD ["npm", "run", "start"]
