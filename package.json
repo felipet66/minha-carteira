@@ -4,7 +4,6 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --watch --host 0.0.0.0 --poll 1000",
-    "dev": "ng serve --open",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
