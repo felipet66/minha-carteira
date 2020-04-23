@@ -46,3 +46,10 @@ Para gerar novos componentes utilize `ng generate component component-name`. Voc
             - server-error-messages
         - models
         - services
+
+## Fluxo de desenvolvimento
+`master -> develop -> master`
+`develop -> release -> develop`
+`release -> featureA -> release`
+`release -> featureB -> release`
+
