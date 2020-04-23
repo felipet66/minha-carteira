@@ -48,8 +48,8 @@ Para gerar novos componentes utilize `ng generate component component-name`. Voc
         - services
 
 ## Fluxo de desenvolvimento
-`master -> develop -> master`
-`develop -> release -> develop`
-`release -> featureA -> release`
+`master -> develop -> master` <br />
+`develop -> release -> develop` <br />
+`release -> featureA -> release` <br />
 `release -> featureB -> release`
 
