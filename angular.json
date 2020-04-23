@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "minha-carteira": {
+    "finansys": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -35,7 +35,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/minha-carteira",
+            "outputPath": "dist/finansys",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -88,18 +88,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "minha-carteira:build"
+            "browserTarget": "finansys:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "minha-carteira:build:production"
+              "browserTarget": "finansys:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "minha-carteira:build"
+            "browserTarget": "finansys:build"
           }
         },
         "test": {
@@ -133,7 +133,7 @@
         }
       }
     },
-    "minha-carteira-e2e": {
+    "finansys-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -142,11 +142,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "minha-carteira:serve"
+            "devServerTarget": "finansys:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "minha-carteira:serve:production"
+              "devServerTarget": "finansys:serve:production"
             }
           }
         },
@@ -162,5 +162,5 @@
       }
     }
   },
-  "defaultProject": "minha-carteira"
+  "defaultProject": "finansys"
 }
